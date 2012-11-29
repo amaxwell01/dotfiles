@@ -7,6 +7,7 @@ This repo is mostly for me but you're welcome to make suggestions. Mathias's is 
 ## install the neccessary apps
 
 My basic setup is captured in `install-deps.sh` which adds homebrew, z, nave, etc.
+I will be updating this to remove nave and install oh-my-zsh
 
 ## private config
 
