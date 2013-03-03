@@ -1,12 +1,22 @@
 [alias]
-	c = commit -am
-	up = pull
-	p = push
-	s = status -s
-	df = diff --color --color-words --abbrev
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+    c = commit -am
+    up = pull
+    p = push
+    s = status -s
+    nb = checkout -b
+    df = diff --color --color-words --abbrev
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
 [color]
 	ui = always
+[user]
+    email = amaxwell01@gmail.com
+    name = Andrew Maxwell
+[credential]
+    helper = osxkeychain
+
+
+## look into what the below does
+
 [apply]
 	whitespace = fix
 [core]
@@ -43,5 +53,5 @@
 
 # Any GitHub repo with my username should be checked out r/w by default
 # http://rentzsch.tumblr.com/post/564806957/public-but-hackable-git-submodules
-[url "git@github.com:paulirish/"]
-  insteadOf = "git://github.com/paulirish/"
+[url "git@github.com:amaxwell01/"]
+  insteadOf = "git://github.com/amaxwell01/"
