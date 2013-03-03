@@ -2,6 +2,7 @@
     c = commit -am
     up = pull
     p = push
+    pom = push origin master
     s = status -s
     db = branch -d
     co = checkout 
