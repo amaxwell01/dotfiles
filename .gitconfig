@@ -1,14 +1,17 @@
 [alias]
+    aa = add .
     c = commit -am
-    up = pull
-    p = push
-    pom = push origin master
-    s = status -s
+    co = checkout
     db = branch -d
-    co = checkout 
-    nb = checkout -b
     df = diff --color --color-words --abbrev
     lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+    nb = checkout -b
+    pu = pull
+    p = push
+    po = push origin
+    pom = push origin master
+    s = status -s
+
 
 [color]
 	ui = always
