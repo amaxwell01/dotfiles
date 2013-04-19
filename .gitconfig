@@ -9,6 +9,7 @@
     pu = pull
     p = push
     po = push origin
+    poh = push origin HEAD
     pom = push origin master
     s = status -s
 
