@@ -86,3 +86,25 @@ git clone https://github.com/paulirish/dotfiles.git && cd dotfiles && ./sync.sh
 ```
 
 To update later on, just run the sync again.
+
+
+
+```
+# Create a script which connects to Github, clones the repo to the server or machine
+# Then updates the contents of that repo and maps it on the machine
+
+
+# Aliases
+alias chef='/var/chef-solo/scripts/run_chef.sh -o -v'
+
+# Restart bash
+source ~/.bashrc
+
+
+# Set variables
+CONFIG=~/.bashrc
+API=/home/user/api.txt
+
+# Appends the content of API to the CONFIG variable
+cat "$API" >> "$CONFIG"
+```
