@@ -1,0 +1,9 @@
+{
+	"installed_packages":
+	[
+		"Handlebars",
+		"Package Control",
+		"Syntax Highlighting for Sass",
+		"View In Browser"
+	]
+}
