@@ -4,28 +4,28 @@ cd "$(dirname "$0")"
 
 input_value_one="${1}"
 input_value_two="${2}"
+current_os=`uname`
 
 # Check to see if Git is installed, if not, install it
 checkGit() {
     if [ $(which git) ]
     then
-        git --version
+        echo "You are using `git --version`"
     else
-        if [ uname == 'Linux' ]
+        if [ "$current_os" == "Linux" ]
         then
+	    echo "Install git on Linux"
+	    echo "========================================="
             apt-get install git
+	elif [ "$current_os" == "Darwin" ]
+	then
+	    echo "========================================="
+	    curl -O https://git-osx-installer.googlecode.com/files/git-1.8.3.2-i
+ntel-universal-snow-leopard.dmg
         else
-            curl -O https://git-osx-installer.googlecode.com/files/git-1.8.3.2-intel-universal-snow-leopard.dmg
-        fi
-    fi
-
-    current_os=uname
-
-    if [ "$current_os" -eq "Linux" ]
-    then
-        echo "This this is Linux"
-    else
-        echo "this is not linux"
+	    echo "========================================="
+            echo "This is not Linux or a Mac"
+	fi
     fi
 }
 
@@ -50,11 +50,20 @@ END
 init() {
     case $input_value_one in 'vhost')
         echo "What do you want your host address to be?"
+	echo "========================================="
         read host_address
+	echo
+	echo
         echo "Where are your files located?"
+	echo "========================================="
         read host_directory
+	echo
+	echo
         echo "Do you want to enable this site? [yes or no]"
-        read host_enabled
+        echo "========================================="
+	read host_enabled
+	echo
+	echo
         echo $host_enabled
         if [ "$host_enabled" -eq "yes" ]
         then
@@ -68,15 +77,19 @@ init() {
 # Check the users input
 init
 
-echo Check to see if Git is installed
+echo "Check to see if Git is installed"
+echo "=================================="
 checkGit
 
 
-echo Setup my dot files
-echo cURL my dot files
+echo "Setup my dot files"
+echo "cURL my dot files"
+echo "=================================="
 #curl -L https://github.com/amaxwell01/dotfiles/archive/master.zip > master.zip
 
-echo Extract my zip file
+echo
+echo
+echo "Extract my zip file"
 # unzip master.zip
 
 echo Ensure that the files downloaded
