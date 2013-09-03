@@ -1,5 +1,5 @@
 "=== Colors ==="
-colorscheme andrewmaxwell-1
+colorscheme andrewcmaxwell-1.vim
 
 syntax on
 
