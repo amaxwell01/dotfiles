@@ -1,4 +1,4 @@
-editor=subl
+EDITOR=subl
 
 # Easier navigation: .., ..., ~ and -
 alias ..="cd .."
