@@ -10,7 +10,10 @@ alias -- -="cd -"
 alias zshconfig="subl ~/.zshrc"
 alias ohmyzsh="subl ~/.oh-my-zsh"
 alias drive="cd ~/Google\ Drive"
+alias clients="cd ~/Google\ Drive/Heka/clients"
+alias projects="cd ~/Google\ Drive/Heka/projects"
 alias pkey="subl ~/.ssh/id_rsa.pub"
+alias openaliases="subl ~/.aliases"
 
 # programs
 alias slt='open -a "Sublime Text 2"'
