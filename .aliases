@@ -12,8 +12,11 @@ alias ohmyzsh="subl ~/.oh-my-zsh"
 alias drive="cd ~/Google\ Drive"
 alias clients="cd ~/Google\ Drive/Heka/clients"
 alias projects="cd ~/Google\ Drive/Heka/projects"
+alias logs="cd /var/log"
 alias pkey="subl ~/.ssh/id_rsa.pub"
 alias openaliases="subl ~/.aliases"
+alias mysql=/usr/local/mysql/bin/mysql
+alias mysqladmin=/usr/local/mysql/bin/mysqladmin
 
 # programs
 alias slt='open -a "Sublime Text 2"'
@@ -24,11 +27,10 @@ alias slt='open -a "Sublime Text 2"'
 # be nice
 alias please=sudo
 alias hosts='sudo $EDITOR /etc/hosts'   # yes I occasionally 127.0.0.1 twitter.com ;)
+alias vhosts='sudo $EDITOR /etc/apache2/extra/httpd-vhosts.conf'
 
 # handy things
 alias bunyip='node ~/code/bunyip/cli.js'
-alias vhost='sudo subl httpd-vhosts.conf'
-
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
