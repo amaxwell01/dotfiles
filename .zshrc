@@ -38,4 +38,13 @@ source $ZSH/oh-my-zsh.sh
 . ~/z.sh
 
 # Customize to your needs...
-export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin/:/usr/local/mysql/bin
+export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin
+
+# Add Git to $PATH
+export PATH=$PATH:/usr/local/git/bin/
+
+# Add MySQL to $PATH
+export PATH=$PATH:/usr/local/mysql/bin
+
+# Add Go Lang to $PATH
+export PATH=$PATH:/usr/local/go/bin
