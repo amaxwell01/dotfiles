@@ -46,6 +46,10 @@ cat <<END >> $host_address
 END
 }
 
+checkJSHint() {
+    npm install jshint -g
+}
+
 # Initialize
 init() {
     case $input_value_one in 'vhost')
