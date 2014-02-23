@@ -36,3 +36,6 @@ Desktop.ini
 Icon?
 ehthumbs.db
 Thumbs.db
+
+# Node.js
+node_modules
