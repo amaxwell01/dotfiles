@@ -21,7 +21,7 @@ alias mysqladmin=/usr/local/mysql/bin/mysqladmin
 alias chrome="open /Applications/Google\ Chrome.app/ --args --disable-web-security &"
 alias bower="noglob bower"
 alias cpu="top -F -R -o cpu"
-alias ports=s"udo lsof -i -n -P | grep TCP"
+alias ports="sudo lsof -i -n -P | grep TCP"
 
 # programs
 
