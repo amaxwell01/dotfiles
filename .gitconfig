@@ -13,6 +13,10 @@
     poh = push origin HEAD
     pom = push origin master
     s = status -s
+    h2 = rebase -i head~2
+    h3 = rebase -i head~3
+    h4 = rebase -i head~4
+    h5 = rebase -i head~5
 
 
 [color]
