@@ -29,7 +29,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git extract svn osx ant macports)
+plugins=(git extract svn osx ant macports docker node npm)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -37,14 +37,43 @@ source $ZSH/oh-my-zsh.sh
 # init z   https://github.com/rupa/z
 . ~/z.sh
 
-# Customize to your needs...
-export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin
+# Update Mac Mission control animation to be snappy
+defaults write com.apple.dock expose-animation-duration -float 0.15;
 
-# Add Git to $PATH
+# Restart Dock / Mission Control
+killall Dock;
+
+### $PATH ###
+# Customize to your needs...
+export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin
+
+# Node
+# brew
+export PATH=$PATH:/usr/local/bin
+
+# Git
 export PATH=$PATH:/usr/local/git/bin/
 
-# Add MySQL to $PATH
+# MySQL
 export PATH=$PATH:/usr/local/mysql/bin
 
-# Add Go Lang to $PATH
+# Go Lang
 export PATH=$PATH:/usr/local/go/bin
+
+# Grunt
+export PATH=$PATH:/usr/local/bin/grunt
+
+# Google Cloud SDK.
+export PATH=$PATH:/Users/andrew/google-cloud-sdk/bin
+
+# Node Express
+export PATH=$PATH:./node_modules/.bin
+
+# Node Version Manager
+export NVM_DIR="/Users/andrew/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# Docker
+export DOCKER_HOST=tcp://192.168.59.103:2376
+export DOCKER_CERT_PATH=/Users/andrew/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1
