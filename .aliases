@@ -9,27 +9,41 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 alias zshconfig="subl ~/.zshrc"
 alias ohmyzsh="subl ~/.oh-my-zsh"
-alias drive="cd ~/Google\ Drive"
-alias clients="cd ~/Google\ Drive/Heka/clients"
-alias projects="cd ~/Google\ Drive/Heka/projects"
-alias experiments="cd ~/Google\ Drive/Heka/projects/experiments"
+alias drive="cd ~/drive"
+alias clients="cd ~/drive/Heka/clients"
+alias projects="cd ~/drive/projects"
+alias experiments="cd ~/drive/projects/experiments"
 alias logs="cd /var/log"
 alias pkey="subl ~/.ssh/id_rsa.pub"
 alias openaliases="subl ~/.aliases"
 alias mysql=/usr/local/mysql/bin/mysql
 alias mysqladmin=/usr/local/mysql/bin/mysqladmin
 alias chrome="open /Applications/Google\ Chrome.app/ --args --disable-web-security &"
-alias bower='noglob bower'
 alias web=/var/www/
+alias bower="noglob bower"
+alias cpu="top -F -R -o cpu"
+alias ports="sudo lsof -i -n -P | grep TCP"
+
+# Add Docker Aliases
+# Docker last used docker ID
+alias dl="docker ps -l -q"
+alias dip="$(boot2docker ip)"
+alias drm="docker rm"
+alias di="docker images"
+alias dps="docker ps"
+alias dpsa="docker ps -a"
 
 # programs
-alias slt='open -a "Sublime Text 2"'
-# also/or do this:
-# ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" ~/bin/subl
+
+# Setup symbolic link subl to Sublime Text 3
+# Remove the previous symbolic link
+rm /usr/local/bin/subl
+
+# Add New symbolic link
+ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
 
 
 # be nice
-alias please=sudo
 alias hosts='sudo $EDITOR /etc/hosts'   # yes I occasionally 127.0.0.1 twitter.com ;)
 alias vhosts='sudo $EDITOR /etc/apache2/extra/httpd-vhosts.conf'
 
