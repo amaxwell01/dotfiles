@@ -2,11 +2,24 @@
 
 [mathias's readme](https://github.com/mathiasbynens/dotfiles/) is awesome. go read it.
 
-This repo is mostly for me but you're welcome to make suggestions. Mathias's is the project to fork.  I'm mostly catching up to him, @cowboy, and @gf3.
+This repo is mostly for me but you're welcome to make suggestions.
 
 ## install the neccessary apps
 
-My basic setup is captured in `install-deps.sh` which adds homebrew, z, nave, etc.
+```
+Required Software:
+* Git
+* oh-my-zsh
+* sass
+* subl mapping
+* NVM
+* Node
+* node-debug
+* vim
+* docker
+```
+
+My basic setup is captured in `install-deps.sh` which adds homebrew, z, nvm, etc.
 I will be updating this to remove nave and install oh-my-zsh
 
 ## private config
@@ -53,7 +66,6 @@ I recommend getting a [`.jshintrc`](https://github.com/jshint/node-jshint/blob/m
 ## overview of files
 
 ####  Automatic config
-* `.ackrc` - for ack (better than grep)
 * `.vimrc`, `.vim` - vim config, obv.
 
 #### shell environement
@@ -82,7 +94,7 @@ I recommend getting a [`.jshintrc`](https://github.com/jshint/node-jshint/blob/m
 ## Installation
 
 ```bash
-git clone https://github.com/paulirish/dotfiles.git && cd dotfiles && ./sync.sh
+git clone https://github.com/amaxwell01/dotfiles.git && cd dotfiles && node sync.js add force
 ```
 
 To update later on, just run the sync again.
@@ -103,8 +115,3 @@ source ~/.bashrc
 
 # Set variables
 CONFIG=~/.bashrc
-API=/home/user/api.txt
-
-# Appends the content of API to the CONFIG variable
-cat "$API" >> "$CONFIG"
-```
