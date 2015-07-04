@@ -23,6 +23,7 @@ alias web=/var/www/
 alias bower="noglob bower"
 alias cpu="top -F -R -o cpu"
 alias ports="sudo lsof -i -n -P | grep TCP"
+alias gpclean="rm -rvf *.LRV; rm -rvf *.THM;"
 
 # Add Docker Aliases
 # Docker last used docker ID

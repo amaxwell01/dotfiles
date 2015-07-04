@@ -17,6 +17,9 @@ Required Software:
 * node-debug
 * vim
 * docker
+* grunt
+* gsutil
+* gcloud
 ```
 
 My basic setup is captured in `install-deps.sh` which adds homebrew, z, nvm, etc.
