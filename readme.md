@@ -22,9 +22,6 @@ Required Software:
 * gcloud
 ```
 
-My basic setup is captured in `install-deps.sh` which adds homebrew, z, nvm, etc.
-I will be updating this to remove nave and install oh-my-zsh
-
 ## private config
 
 Toss it into a file called `.extra` which you do not commit to this repo and just keep in your `~/`
@@ -42,6 +39,27 @@ PATH=$PATH:~/code/git-friendly
 
 export PATH
 ```
+
+# Download Git
+http://git-scm.com/download/mac
+
+# Download NVM
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.25.4/install.sh | bash
+
+# Setup NVM to use the latest version of IO.js/Node.js
+nvm install iojs-v2.3.3
+nvm use iojs-v2.3.3
+nvm alias default iojs-v2.3.3
+
+# Download my DOT files using git
+git clone https://github.com/amaxwell01/dotfiles.git && cd dotfiles && node sync.js add force
+
+
+# Download Software
+curl -O http://downloads.puppetlabs.com/mac/puppet-latest.dmg
+wget http://downloads.puppetlabs.com/mac/puppet-latest.dmg
+
+# Setup DotFiles
 
 ## Syntax highlighting
 
