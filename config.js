@@ -1,6 +1,6 @@
 module.exports = {
     // Where are your dotfiles located
-    homePath: '/Users/andrew/dotfilesTest',
+    homePath: '/Users/amaxwell',
 
     // Where are your dotfiles located
     dotFilesPath: (__dirname + '/dotfiles')

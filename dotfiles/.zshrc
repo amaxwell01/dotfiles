@@ -35,7 +35,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Directory Jumping!
 # init z   https://github.com/rupa/z
-. ~/z.sh
+#. ~/z.sh
 
 # Update Mac Mission control animation to be snappy
 defaults write com.apple.dock expose-animation-duration -float 0.15;
@@ -64,16 +64,26 @@ export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:/usr/local/bin/grunt
 
 # Google Cloud SDK.
-export PATH=$PATH:/Users/andrew/google-cloud-sdk/bin
+#export PATH=$PATH:/Users/andrew/google-cloud-sdk/bin
 
 # Node Express
 export PATH=$PATH:./node_modules/.bin
 
 # Node Version Manager
-export NVM_DIR="/Users/andrew/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+# export NVM_DIR="/Users/andrew/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+. ~/.nvm/nvm.sh
 
 # Docker
+#export DOCKER_CERT_PATH=/Users/andrew/.boot2docker/certs/boot2docker-vm
+export DOCKER_CERT_PATH=/Users/amaxwell/.boot2docker/certs/boot2docker-vm
 export DOCKER_HOST=tcp://192.168.59.103:2376
-export DOCKER_CERT_PATH=/Users/andrew/.boot2docker/certs/boot2docker-vm
 export DOCKER_TLS_VERIFY=1
+
+
+# Ruby Version Manager for GoPro
+# Add RVM to PATH for scripting
+export PATH="$PATH:$HOME/.rvm/bin"
+
+# Required to get RVM to be found with ZSH
+source $HOME/.rvm/scripts/rvm
