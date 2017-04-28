@@ -69,7 +69,11 @@ defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
 #sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
 
 # Restart automatically if the computer freezes
-systemsetup -setrestartfreeze on
+# This may be why my computer restarts on its own at random times
+# systemsetup -setrestartfreeze on
+
+# Set the NTP time to time.google.com
+systemsetup -setnetworktimeserver time.google.com
 
 # Check for software updates daily, not just once per week
 #defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
