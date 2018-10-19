@@ -17,6 +17,7 @@
     h3 = rebase -i head~3
     h4 = rebase -i head~4
     h5 = rebase -i head~5
+    poht = push origin HEAD && git push origin HEAD --tags
 
 
 [color]
@@ -71,7 +72,7 @@
   insteadOf = "git://github.com/amaxwell01/"
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true

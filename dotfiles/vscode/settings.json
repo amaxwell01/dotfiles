@@ -1,0 +1,15 @@
+{
+    "editor.fontSize": 14,
+    "editor.tabSize": 2,
+    "editor.renderWhitespace": "all",
+    "window.zoomLevel": 0,
+    "editor.minimap.enabled": false,
+    "[json]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": false
+    },
+    "npm.enableScriptExplorer": true,
+    "breadcrumbs.enabled": true,
+    "workbench.editor.enablePreview": false
+}
