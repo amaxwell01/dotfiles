@@ -5,6 +5,7 @@
     db = branch -d
     Db = branch -D
     df = diff --color --color-words --abbrev
+    dn = diff -- . ':(exclude)package-lock.json'
     lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
     nb = checkout -b
     pu = pull
