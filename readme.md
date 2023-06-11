@@ -72,6 +72,7 @@ nvm alias default iojs-v2.3.3
 * vim
 * gsutil
 * gcloud
+* git-open
 
 ## Deprecated Software
 
@@ -82,6 +83,11 @@ nvm alias default iojs-v2.3.3
 
 ## Themes:
 [draculatheme](https://draculatheme.com) - Dark Theme for VS Code, VIM, ZSH, iTerm, Slack.
+
+## Git Open
+```bash
+npm install --global git-open
+```
 
 ## private config
 
