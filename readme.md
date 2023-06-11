@@ -80,6 +80,9 @@ nvm alias default iojs-v2.3.3
 * docker
 * grunt
 
+## Themes:
+[draculatheme](https://draculatheme.com) - Dark Theme for VS Code, VIM, ZSH, iTerm, Slack.
+
 ## private config
 
 Toss it into a file called `.extra` which you do not commit to this repo and just keep in your `~/`
@@ -97,10 +100,6 @@ PATH=$PATH:~/code/git-friendly
 
 export PATH
 ```
-
-
-### Originally inspired by:
-[mathias's readme](https://github.com/mathiasbynens/dotfiles/) is awesome. go read it.
 
 # Download Software
 ```bash
@@ -120,12 +119,6 @@ Install [Dotfiles Syntax Highlighting](https://github.com/mattbanks/dotfiles-syn
 ```bash
 ./.osx
 ```
-
-## Similar projects
-
-I recommend getting a [`.jshintrc`](https://github.com/jshint/node-jshint/blob/master/.jshintrc) and [`.editorconfig`](http://editorconfig.org/) defined for all your projects.
-
-
 
 ---
 
@@ -186,4 +179,9 @@ source ~/.bashrc
 ```
 
 
+### Originally inspired by:
+[mathias's readme](https://github.com/mathiasbynens/dotfiles/) is awesome. go read it.
 
+## Similar projects
+
+I recommend getting a [`.jshintrc`](https://github.com/jshint/node-jshint/blob/master/.jshintrc) and [`.editorconfig`](http://editorconfig.org/) defined for all your projects.
