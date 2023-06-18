@@ -38,7 +38,7 @@
 	excludesfile = /Users/amaxwell/.gitignore
 	attributesfile = ~/.gitattributes
 	whitespace = fix,space-before-tab,tab-in-indent,trailing-space
-	editor = atom --wait
+	editor = vim
 [color "branch"]
 	current = yellow reverse
 	local = yellow
@@ -71,9 +71,3 @@
 # http://rentzsch.tumblr.com/post/564806957/public-but-hackable-git-submodules
 [url "git@github.com:amaxwell01/"]
   insteadOf = "git://github.com/amaxwell01/"
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path =
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
