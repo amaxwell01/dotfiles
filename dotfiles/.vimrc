@@ -1,7 +1,7 @@
 "=== Colors ==="
-colorscheme andrewcmaxwell-1.vim
-
-syntax on
+packadd! dracula
+syntax enable
+colorscheme dracula
 
 set number                      " Show line numbers
 set cursorline                  " Highlight the currently selected line
