@@ -15,8 +15,42 @@ export HISTTIMEFORMAT
 
 # Make some commands not show up in history
 export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
+
+
+### $PATH ###
+# Customize to your needs...
+export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin
+
+# Node
+# brew
+export PATH=$PATH:/usr/local/bin
+
+# Git
+export PATH=$PATH:/usr/local/git/bin/
+
+# MySQL
+export PATH=$PATH:/usr/local/mysql/bin
+
+# Go Lang
+export PATH=$PATH:/usr/local/go/bin
+
+# Google Cloud SDK.
+#export PATH=$PATH:/Users/andrew/google-cloud-sdk/bin
+
+# Node Express
+export PATH=$PATH:./node_modules/.bin
+
 # Rust
 # Cargo
 # Rustup
 export CARGO_HOME=$HOME"/.cargo"
 export RUSTUP_HOME=$HOME"/.rustup"
+
+# Rust
+# Cargo
+# Rustup
+export PATH=$PATH:/home/user/.rustup
+export PATH=$PATH:/home/user/.cargo
+export PATH=$PATH:/home/user/.cargo/bin
+
+export PATH="$PATH:/home/user/.local/share/solana/install/active_release/bin:"

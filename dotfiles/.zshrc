@@ -12,7 +12,7 @@ ZSH_THEME="af-magic"
 . ~/.aliases
 
 # Exports
-. ~/.aliases
+. ~/.exports
 
 # Functions
 . ~/.functions
@@ -53,29 +53,6 @@ if [[ "$OSTYPE" =~ ^darwin ]] then
   killall Dock;
 fi
 
-### $PATH ###
-# Customize to your needs...
-export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin
-
-# Node
-# brew
-export PATH=$PATH:/usr/local/bin
-
-# Git
-export PATH=$PATH:/usr/local/git/bin/
-
-# MySQL
-export PATH=$PATH:/usr/local/mysql/bin
-
-# Go Lang
-export PATH=$PATH:/usr/local/go/bin
-
-# Google Cloud SDK.
-#export PATH=$PATH:/Users/andrew/google-cloud-sdk/bin
-
-# Node Express
-export PATH=$PATH:./node_modules/.bin
-
 # Node Version Manager
 # export NVM_DIR="/Users/andrew/.nvm"
 # [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -84,11 +61,3 @@ if [[ -s "$NVM_DIR/nvm.sh" ]] then
   # load nvm
   . ~/.nvm/nvm.sh
 fi
-
-
-# Rust
-# Cargo
-# Rustup
-export PATH=$PATH:/home/user/.rustup
-export PATH=$PATH:/home/user/.cargo
-export PATH=$PATH:/home/user/.cargo/bin
