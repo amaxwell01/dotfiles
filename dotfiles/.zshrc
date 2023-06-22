@@ -11,6 +11,12 @@ ZSH_THEME="af-magic"
 # ALIASES
 . ~/.aliases
 
+# Exports
+. ~/.aliases
+
+# Functions
+. ~/.functions
+
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
@@ -29,7 +35,7 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git extract svn osx ant macports docker node npm)
+plugins=(git extract svn macos ant macports docker node npm)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -38,10 +44,14 @@ source $ZSH/oh-my-zsh.sh
 #. ~/z.sh
 
 # Update Mac Mission control animation to be snappy
-defaults write com.apple.dock expose-animation-duration -float 0.15;
+# only run on a mac
+if [[ "$OSTYPE" =~ ^darwin ]] then
+  # Set Mission Control Animation Speeds
+  defaults write com.apple.dock expose-animation-duration -float 0.15;
 
-# Restart Dock / Mission Control
-killall Dock;
+  # Restart Dock / Mission Control
+  killall Dock;
+fi
 
 ### $PATH ###
 # Customize to your needs...
@@ -60,9 +70,6 @@ export PATH=$PATH:/usr/local/mysql/bin
 # Go Lang
 export PATH=$PATH:/usr/local/go/bin
 
-# Grunt
-export PATH=$PATH:/usr/local/bin/grunt
-
 # Google Cloud SDK.
 #export PATH=$PATH:/Users/andrew/google-cloud-sdk/bin
 
@@ -72,18 +79,16 @@ export PATH=$PATH:./node_modules/.bin
 # Node Version Manager
 # export NVM_DIR="/Users/andrew/.nvm"
 # [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-. ~/.nvm/nvm.sh
-
-# Docker
-#export DOCKER_CERT_PATH=/Users/andrew/.boot2docker/certs/boot2docker-vm
-export DOCKER_CERT_PATH=/Users/amaxwell/.boot2docker/certs/boot2docker-vm
-export DOCKER_HOST=tcp://192.168.59.103:2376
-export DOCKER_TLS_VERIFY=1
+# only run when nvm is installed
+if [[ -s "$NVM_DIR/nvm.sh" ]] then
+  # load nvm
+  . ~/.nvm/nvm.sh
+fi
 
 
-# Ruby Version Manager for GoPro
-# Add RVM to PATH for scripting
-export PATH="$PATH:$HOME/.rvm/bin"
-
-# Required to get RVM to be found with ZSH
-source $HOME/.rvm/scripts/rvm
+# Rust
+# Cargo
+# Rustup
+export PATH=$PATH:home/user/.rustup
+export PATH=$PATH:/home/user/.cargo
+export PATH=$PATH:./home/user/.cargo/bin

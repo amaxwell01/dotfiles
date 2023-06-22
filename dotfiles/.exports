@@ -15,3 +15,8 @@ export HISTTIMEFORMAT
 
 # Make some commands not show up in history
 export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
+# Rust
+# Cargo
+# Rustup
+export CARGO_HOME=$HOME"/.cargo"
+export RUSTUP_HOME=$HOME"/.rustup"

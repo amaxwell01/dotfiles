@@ -28,20 +28,10 @@ alias gpclean="rm -rvf *.LRV; rm -rvf *.THM;"
 # Add Docker Aliases
 # Docker last used docker ID
 alias dl="docker ps -l -q"
-alias dip="$(boot2docker ip)"
 alias drm="docker rm"
 alias di="docker images"
 alias dps="docker ps"
 alias dpsa="docker ps -a"
-
-# programs
-
-# Setup symbolic link subl to Sublime Text 3
-# Remove the previous symbolic link
-rm /usr/local/bin/subl
-
-# Add New symbolic link
-ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
 
 
 # be nice
