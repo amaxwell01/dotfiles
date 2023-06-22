@@ -89,6 +89,6 @@ fi
 # Rust
 # Cargo
 # Rustup
-export PATH=$PATH:home/user/.rustup
+export PATH=$PATH:/home/user/.rustup
 export PATH=$PATH:/home/user/.cargo
-export PATH=$PATH:./home/user/.cargo/bin
+export PATH=$PATH:/home/user/.cargo/bin
