@@ -25,6 +25,11 @@ export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin
 # brew
 export PATH=$PATH:/usr/local/bin
 
+# Volta
+export VOLTA_HOME=$HOME/.volta
+export PATH=$PATH:$VOLTA_HOME/bin
+
+
 # Git
 export PATH=$PATH:/usr/local/git/bin/
 
