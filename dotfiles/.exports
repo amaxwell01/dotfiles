@@ -58,4 +58,4 @@ export PATH=$PATH:$RUSTUP_HOME
 export PATH=$PATH:$CARGO_HOME
 export PATH=$PATH:$CARGO_HOME/bin
 
-export PATH="$PATH:$HOME/.local/share/solana/install/active_release/bin:"
+export PATH=$PATH:$HOME"/.local/share/solana/install/active_release/bin"
