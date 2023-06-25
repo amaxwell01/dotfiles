@@ -54,8 +54,8 @@ export RUSTUP_HOME=$HOME"/.rustup"
 # Rust
 # Cargo
 # Rustup
-export PATH=$PATH:/home/user/.rustup
-export PATH=$PATH:/home/user/.cargo
-export PATH=$PATH:/home/user/.cargo/bin
+export PATH=$PATH:$RUSTUP_HOME
+export PATH=$PATH:$CARGO_HOME
+export PATH=$PATH:$CARGO_HOME/bin
 
 export PATH="$PATH:/home/user/.local/share/solana/install/active_release/bin:"
