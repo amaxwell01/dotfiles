@@ -26,8 +26,8 @@ export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin
 export PATH=$PATH:/usr/local/bin
 
 # Volta
-export VOLTA_HOME=$HOME/.volta
-export PATH=$PATH:$VOLTA_HOME/bin
+export VOLTA_HOME="$HOME/.volta"
+export PATH=$VOLTA_HOME/bin:$PATH
 
 
 # Git
@@ -43,7 +43,7 @@ export PATH=$PATH:/usr/local/go/bin
 #export PATH=$PATH:/Users/andrew/google-cloud-sdk/bin
 
 # Node Express
-export PATH=$PATH:./node_modules/.bin
+# export PATH=$PATH:./node_modules/.bin
 
 # Rust
 # Cargo
