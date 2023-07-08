@@ -32,6 +32,7 @@ alias drm="docker rm"
 alias di="docker images"
 alias dps="docker ps"
 alias dpsa="docker ps -a"
+alias bat="batcat"
 
 
 # be nice

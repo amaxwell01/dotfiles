@@ -17,6 +17,11 @@ ZSH_THEME="af-magic"
 # Functions
 . ~/.functions
 
+# only include .extra if it exists
+if [ -f ~/.extra ]; then
+  . ~/.extra
+fi
+
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
