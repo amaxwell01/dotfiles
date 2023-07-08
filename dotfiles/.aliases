@@ -142,3 +142,7 @@ alias pumpitup="osascript -e 'set volume 10'"
 alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
 
 alias nrd="npm run dev"
+alias nrb="npm run build"
+alias nrt="npm run test"
+alias nrs="npm run start"
+alias nr="npm run"
