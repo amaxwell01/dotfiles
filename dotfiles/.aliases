@@ -32,6 +32,9 @@ alias drm="docker rm"
 alias di="docker images"
 alias dps="docker ps"
 alias dpsa="docker ps -a"
+
+# BAT - A better cat
+# https://github.com/sharkdp/bat
 alias bat="batcat"
 
 
