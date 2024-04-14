@@ -50,13 +50,14 @@ source $ZSH/oh-my-zsh.sh
 
 # Update Mac Mission control animation to be snappy
 # only run on a mac
-if [[ "$OSTYPE" =~ ^darwin ]] then
-  # Set Mission Control Animation Speeds
-  defaults write com.apple.dock expose-animation-duration -float 0.15;
+### WARNING, leaving this in will trigger a decktop refresh ###
+# if [[ "$OSTYPE" =~ ^darwin ]] then
+#   # Set Mission Control Animation Speeds
+#   defaults write com.apple.dock expose-animation-duration -float 0.15;
 
-  # Restart Dock / Mission Control
-  killall Dock;
-fi
+#   # Restart Dock / Mission Control
+#   killall Dock;
+# fi
 
 # Node Version Manager
 # export NVM_DIR="/Users/andrew/.nvm"
@@ -66,3 +67,9 @@ if [[ -s "$NVM_DIR/nvm.sh" ]] then
   # load nvm
   . ~/.nvm/nvm.sh
 fi
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/andrew/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/andrew/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/andrew/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/andrew/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
